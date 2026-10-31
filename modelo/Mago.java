@@ -2,8 +2,7 @@ package modelo;
 
 /**
  * Subclase Mago (Capa MODELO)
- * Representa a un hechicero capaz de canalizar hechizos y barreras arcanas.
- * Implementa sus propias reglas de danio y defensa sin salidas por consola.
+ * Representa a un hechicero capaz de canalizar hechizos.
  */
 public class Mago extends Criatura {
     // Atributo especifico del Mago segun el diagrama UML
@@ -34,7 +33,7 @@ public class Mago extends Criatura {
 
     /**
      * Defensa unica del Mago:
-     * Su barrera arcana absorbe 4 puntos del danio entrante.
+     * Su barrera absorbe 4 puntos del dañio entrante.
      */
     @Override
     public void defender(int danio) {
