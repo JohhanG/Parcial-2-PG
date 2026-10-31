@@ -32,6 +32,10 @@ Parcial 2/
 │   └── BatallaVista.java        # Capa de presentación (Formato, interfaces y mensajes de consola)
 ├── 📁 controlador/
 │   └── BatallaControlador.java  # Capa de control (Orquestación de rondas, turnos y reglas de batalla)
+├── 📁 test/
+│   └── CriaturaTest.java        # Pruebas unitarias automatizadas con JUnit 5
+├── 📁 lib/
+│   └── junit-platform-console-standalone-1.10.2.jar # Dependencia standalone de JUnit 5
 ├── 📄 Main.java                 # Punto de entrada y método polimórfico simularBatalla(...)
 ├── 📄 README.md                 # Documentación técnica completa del proyecto
 └── 📄 .gitignore                # Exclusión de archivos compilados (.class) y configuraciones de IDEs
@@ -133,6 +137,7 @@ classDiagram
 | **4. Polimorfismo**               | Invocación dinámica de métodos (`atacar` y `defender`) sin importar el tipo específico de criatura recibida en tiempo de ejecución.                                          | ✅ Cumplido |
 | **5. Arquitectura MVC**           | Capa `modelo` sin salidas de consola; capa `vista` exclusiva para la interfaz de texto; capa `controlador` para el flujo de batallas.                                        | ✅ Cumplido |
 | **6. Control de Versiones Git**   | Trabajo en equipo en ramas independientes (`johhang`, `Eva`), pull requests aprobados y fusionados, y commits semánticos ordenados.                                          | ✅ Cumplido |
+| **7. Pruebas Unitarias (JUnit 5)**| 9 pruebas unitarias automatizadas (`CriaturaTest.java`) evaluando mitigación de daño, daño potenciado, polimorfismo y supervivencia.                                           | ✅ Cumplido |
 
 ---
 
@@ -146,6 +151,10 @@ javac modelo/*.java vista/*.java controlador/*.java Main.java
 
 # 2. Ejecución del simulador de batallas
 java Main
+
+# 3. Compilación y ejecución de las pruebas unitarias (JUnit 5)
+javac -cp ".;lib/*" modelo/*.java test/*.java
+java -jar lib/junit-platform-console-standalone-1.10.2.jar execute --class-path . --scan-class-path
 ```
 
 ---
