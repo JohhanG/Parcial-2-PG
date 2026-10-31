@@ -3,7 +3,10 @@ package modelo;
 /**
  * Subclase Guerrero (Capa MODELO)
  * Representa a un combatiente cuerpo a cuerpo experto en el uso de armas.
+<<<<<<< HEAD
+=======
  * Implementa sus propias reglas de danio y defensa sin salidas por consola.
+>>>>>>> 9a4515bfdf0ccceb22ea685dc0e4ef0f2db26da8
  */
 public class Guerrero extends Criatura {
     // Atributo especifico del Guerrero segun el diagrama UML
