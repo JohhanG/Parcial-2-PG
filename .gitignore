@@ -1,0 +1,7 @@
+# Binarios compilados de Java
+*.class
+
+# Configuraciones de IDEs
+.vscode/
+.idea/
+*.iml
